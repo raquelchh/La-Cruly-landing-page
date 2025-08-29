@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;  
+}
+body {
+  color: #5c3d2e; 
+  background: #fdf7ec; 
+  line-height: 1.8;
+}
+header {
+  color: rgb(102, 36, 36);
+  padding: 10px;
+  text-align: center;
+}
+#tituloo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}      
+#logosolo {
+    width: 80px;
+    margin-right: 10px;
+}
+#logosolo {
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+}
+#logo1 {
+  width: 250px;
+  transition: transform 0.6s ease;
+  animation: slideIn 1s ease-out;
+}
+#logo1:hover {
+  transform: translateY(-5px);
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;     
+  margin-top: 0%;
+  background-color: #f5e6b3;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;  
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.services img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.produtos img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #fff8e1;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    font-weight: bold;
+}
+@media(max-width: 480px) {
+    .produtos {
+      flex-direction: column;
+      align-items: center;
+}
+nav ul {
+    flex-direction: column;
+    padding: 0;
+}
+nav li {
+    margin: 10px 0;
+}
+section {
+    padding: 20px 10px;
+}
+}
+nav a {
+  color: rgb(59, 54, 54);
+  text-decoration: none;
+  font-weight: bold;
+      
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+} 
+section p {
+    text-align: left;  
+}
+.services, .benefits, .testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  flex: 1 1 250px;
+  border: 1px solid #fffcfc;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #023452;
+    border-radius: 5px;
+}
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+footer {
+    background: #333;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;    
+}
+@media (max-width: 768px) {
+  .services,
+  .benefits,
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+}
+nav ul {
+    flex-direction: column;
+    padding: 0;
+}
+nav li {
+    margin: 10px 0;
+}
+section {
+    padding: 20px 10px;
+ }
+}
+@media (max-width: 480px) {
+  #logo1,
+  #logosolo {
+    width: 90%;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .services img {
+    max-width: 150px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+}
