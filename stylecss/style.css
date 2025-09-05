@@ -177,11 +177,12 @@ button:hover {
 
 /*FOOTER*/
 footer {
-  background: #6d6767;
+  background:  #f1e8ca;
   color: rgb(0, 0, 0);
   padding: 20px;
   text-align: center;
   margin-top: 40px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 /* RESPONSIVO */
