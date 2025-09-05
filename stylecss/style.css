@@ -197,7 +197,7 @@ footer {
     gap: 10px;
   }
 
-  .services,
+  .service,
   .benefits,
   .testimonials {
     flex-direction: column;
