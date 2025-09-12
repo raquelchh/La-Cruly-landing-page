@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat', sans-serif;
   background-color: #fff8e1;
 }
 
@@ -54,13 +54,21 @@ nav {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row;
   justify-content: center;
-  gap: 15px;
+  gap: 5px;
   list-style: none;
   text-align: left;
 }
-
+nav ul li a i:last-child i{
+  font-size: 1.6rem;
+  color: #5c3d21;
+  transition: transform 0.3s ease;
+}
+nav ul li>:last-child i:hover{
+  transform:scale (1.2);
+  color: #e1306c;
+}
 nav a {
   text-decoration: none;
   color: #333;
@@ -68,9 +76,31 @@ nav a {
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav ul li a i:hover {
+  transform: scale(1.2);
   color: #4CAF50;
 }
+.redesinfo{
+  margin-left: auto; /* empurra pro canto direito */
+  display: flex;
+  align-items: center;
+
+}
+.bi-instagram {
+
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #5c3d2e;
+  transition: transform 0.3s ease;
+}
+
+.bi-instagram:hover {
+  transform: scale(1.2);
+  color: #e1306c;
+}
+
+ 
 
 /* seçoes */
 section {
@@ -191,10 +221,11 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .service,
@@ -208,6 +239,16 @@ footer {
     width: 90%;
   }
 }
+
+@media (max-width: 480px) {
+  .bi-instagram {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    padding-top: 2%;
+    padding-right: 15px;
+  }
+}
+
 
 @media (max-width: 480px) {
   #logo1 {
