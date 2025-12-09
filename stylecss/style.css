@@ -5,25 +5,20 @@
    font-family: 'Montserrat', sans-serif;
   background-color: #fff8e1;
 }
-
 body {
   background-color: #fff8e1;
    color: #222;
-   line-height: 1.6;
-  
+   line-height: 1.6; 
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
 header {
   text-align: center;
   padding: 15px;
 }
-
 #tituloo {
   display: flex;
   align-items: center;
@@ -31,27 +26,22 @@ header {
   flex-wrap: wrap;
   gap: 15px;
 }
-
 #logosolo {
   max-width: 60px;
   height: auto;
 }
-
 #logo1 {
   max-width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
-
 #logo1:hover {
   transform: scale(1.05);
 }
-
 nav {
   margin-top: 1px;
   
 }
-
 nav ul {
   display: flex;
   flex-wrap: row;
@@ -75,7 +65,6 @@ nav a {
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
 nav ul li a i:hover {
   transform: scale(1.2);
   color: #4CAF50;
@@ -84,7 +73,6 @@ nav ul li a i:hover {
   margin-left: auto; /* empurra pro canto direito */
   display: flex;
   align-items: center;
-
 }
 .bi-instagram {
 
@@ -94,25 +82,19 @@ nav ul li a i:hover {
   color: #5c3d2e;
   transition: transform 0.3s ease;
 }
-
 .bi-instagram:hover {
   transform: scale(1.2);
   color: #e1306c;
 }
-
- 
-
 /* seçoes */
 section {
   padding: 40px 20px;
   text-align: center;
 }
-
 h2 {
   margin-bottom: 20px;
   color: #222;
 }
-
 /*VIDEO RESPONSIVO*/
 .video-container {
   position: relative;
@@ -121,7 +103,6 @@ h2 {
   overflow: hidden;
   margin-bottom: 20px;
 }
-
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -130,7 +111,6 @@ h2 {
   height: 100%;
   justify-content: center;
 }
-
 /*CARDS GENERALES*/
 .services,
 .benefits,
@@ -140,7 +120,6 @@ h2 {
   justify-content: center;
   gap: 20px;
 }
-
 .card {
   flex: 1 1 280px;
   max-width: 320px;
@@ -150,26 +129,22 @@ h2 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
 .card img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
 }
-
 /*LISTA DE BENEFICIOS */
 ul {
   list-style: none;
   padding: 0;
   text-align: left;
 }
-
 ul li {
   background: #fff8e1;
   margin: 8px 0;
@@ -177,7 +152,6 @@ ul li {
   border-left: 5px solid #4CAF50;
   font-weight: 500;
 }
-
 /*FORMULARIO */
 form {
   max-width: 400px;
@@ -186,25 +160,21 @@ form {
   flex-direction: column;
   gap: 10px;
 }
-
 input, textarea, button {
   padding: 12px;
   border: 1px solid #023452;
   border-radius: 5px;
   font-size: 1rem;
 }
-
 button {
   background: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
-
 button:hover {
   background: #45a049;
 }
-
 /*FOOTER*/
 footer {
   background:  #f1e8ca;
@@ -214,7 +184,6 @@ footer {
   margin-top: 40px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
 /* RESPONSIVO */
 @media (max-width: 768px) {
   #tituloo {
@@ -227,19 +196,16 @@ footer {
     gap: 12px;
     flex-wrap: wrap;
   }
-
   .service,
   .benefits,
   .testimonials {
     flex-direction: column;
     align-items: center;
   }
-
   .card {
     width: 90%;
   }
 }
-
 @media (max-width: 480px) {
   .bi-instagram {
     font-size: 1.4rem;
@@ -248,25 +214,19 @@ footer {
     padding-right: 15px;
   }
 }
-
-
 @media (max-width: 480px) {
   #logo1 {
     max-width: 160px;
   }
-
   #logosolo {
     max-width: 50px;
   }
-
   h2 {
     font-size: 1.3rem;
   }
-
   p, li {
     font-size: 0.95rem;
   }
-
   section {
     padding: 25px 10px;
   }
